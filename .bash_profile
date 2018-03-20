@@ -6,7 +6,7 @@ tabname () { printf "\e]1;$1\a"; }
 
 export PATH=$PATH:~/bin:~/.yarn/bin
 export STRAP_GITHUB_USER=stephenfowler
-#export VAGRANT_SERVER_URL=http://artrepo.daptiv.com:8081/artifactory/api/vagrant/vagrant-local/dev_ppm
+export VAGRANT_SERVER_URL=http://artrepo.daptiv.com:8081/artifactory/api/vagrant/vagrant-local/dev_ppm
 export HOST=http://devauth.daptiv.com
 export ACCESSKEY=943fadb7-6ce2-4493-a9f2-ca5233063bb4
 export JWTSECRET=Y39LFzeOfimoJ446hSX8P3iCkO6I75yI8SJOsAj7lvkD4wO7an6p47wx6iCFHJJ8
