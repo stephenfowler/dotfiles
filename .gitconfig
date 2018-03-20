@@ -1,48 +1,11 @@
-[push]
-	default = current
-
-[core]
-	editor = vim
-	eol = lf
-
 [user]
 	name = Stephen Fowler
-	email = stephenlfowler@gmail.com
-
-[alias]
-	logg = log --graph
-	who = shortlog -s
-	logsl = log --oneline --decorate
-	logfg = log --pretty=oneline --abbrev-commit --graph --decorate --all
-    nb = !sh -c 'git checkout -b $1 && git push -u origin HEAD' -
-    db = !sh -c 'git checkout master && git push origin :$1 && git branch -D $1 && git fetch -p' -
-    undo = reset --hard
-    logv = log --oneline --decorate --graph
-    size = !git bundle create repo.size --all && du -sh repo.size && rm -f repo.size
-	fb = !sh -c 'git filter-branch --subdirectory-filter $1 --tag-name-filter cat --prune-empty -- --all' -
- 	co = checkout
-	st = status
-	cob = checkout -b
-	gf = diff
-
-[color]
-	ui = true
-
-[hub]
-	protocol = https
-
-[credential]
-	helper = osxkeychain
-
-[auto]
-	crlf = input
+	email = stephen.fowler@changepoint.com
+[mergetool "beyondcompare"]
+	cmd = /cygdrive/c/Program\\ Files\\ \\(x86\\)/Beyond\\ Compare\\ 3/bcomp.exe `cygpath -wa \"$LOCAL\"` `cygpath -wa \"$REMOTE\"` `cygpath -wa \"$BASE\"` `cygpath -wa \"$MERGED\"`
 [merge]
-	tool = kdiff3
-[mergetool "kdiff3"]
-	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-[github]
-	user = stephenfowler
+	tool = beyondcompare
+[color]
+	ui = auto
+[push]
+	default = simple
