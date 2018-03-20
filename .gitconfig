@@ -6,8 +6,8 @@
 	eol = lf
 
 [user]
-	name = Matthew McCallum
-	email = matthew@synapseware.com
+	name = Stephen Fowler
+	email = stephenlfowler@gmail.com
 
 [alias]
 	logg = log --graph
@@ -45,4 +45,4 @@
 	smudge = git-lfs smudge %f
 	required = true
 [github]
-	user = dachew
+	user = stephenfowler
