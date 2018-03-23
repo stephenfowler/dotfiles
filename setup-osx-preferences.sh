@@ -13,7 +13,6 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 echo "configure dock preferences..."
 defaults write com.apple.dock showhidden -bool TRUE
-defaults write com.apple.dock autohide -bool TRUE
 defaults write com.apple.dock magnification -bool TRUE
 defaults write com.apple.dock tilesize -integer 24
 
