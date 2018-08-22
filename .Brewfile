@@ -12,7 +12,6 @@ brew "zsh"
 brew "zsh-completions"
 
 cask "dropbox"
-cask "opera"
 cask "vlc"
 cask "the-unarchiver"
 cask "visual-studio-code"
